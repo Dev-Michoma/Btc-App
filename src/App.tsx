@@ -5,9 +5,9 @@ function App() {
   
 
   return (
-    <div className='bg-gray-500 p-4'>
-      Test Application
-    </div>
+   <main className='max-w-2xl mx-auto' >
+    <h1>Find Cheapest BTC</h1>
+   </main>
   )
 }
 
