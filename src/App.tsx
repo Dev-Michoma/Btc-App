@@ -1,12 +1,13 @@
 
 
-import './App.css'
+// import './App.css'
+// import './index.css'
 
 function App() {
   
 
   return (
-  <div>
+  <div className="text-red">
     Test
   </div>
   )
