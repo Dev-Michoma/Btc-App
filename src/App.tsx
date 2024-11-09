@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './index.css'
 import Input from './Input'
+import AmountInput from './AmountInput';
 
 
 function App() {   
@@ -12,7 +13,10 @@ function App() {
         Find the Cheapest BTC</h1> 
       
       <div className='flex justify-center mt-8'>
-     
+       < AmountInput 
+        value ={amount}
+        onChange={e => setAmount(e.target.value)}
+       />
       </div>
      
       
