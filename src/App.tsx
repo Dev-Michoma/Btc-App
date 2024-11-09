@@ -16,6 +16,7 @@ function App() {
        < AmountInput 
         value ={amount}
         onChange={e => setAmount(e.target.value)}
+        
        />
       </div>
      
