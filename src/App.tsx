@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './index.css'
-import Input from './Input'
+// import Input from './Input'
 import AmountInput from './AmountInput';
 
 
