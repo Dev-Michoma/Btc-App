@@ -4,7 +4,8 @@ export default function AmountInput(props:InputProps){
     return(
   <div>
   <Input 
-      placeholder ="amount"
+      placeholder ="Amount"
+      className="text-right"
       value={props.value}
        onChange={props.onChange}/>
 

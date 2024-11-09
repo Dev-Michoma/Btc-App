@@ -5,7 +5,7 @@ import AmountInput from './AmountInput';
 
 
 function App() {   
-  const [amount ,setAmount] =useState('');
+  const [amount ,setAmount] =useState('100');
   return ( 
   <main className='max-w-2xl mx-auto px-4 py-8' >
       <h1 className='uppercase text-4xl text-center font-bold bg-gradient-to-br from-purple-600
