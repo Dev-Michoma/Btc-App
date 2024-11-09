@@ -22,6 +22,9 @@ function App() {
      
      <div className='mt-6'>
       <ResultRow/>
+      <ResultRow/>
+      <ResultRow/>
+      <ResultRow loading={true}/>
      </div>
       
   </main>
