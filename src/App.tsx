@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './index.css'
 // import Input from './Input'
 import AmountInput from './AmountInput';
-
+import ResultRow from './ResultRow';
 
 function App() {   
   const [amount ,setAmount] =useState('100');
@@ -20,6 +20,9 @@ function App() {
        />
       </div>
      
+     <div className='mt-6'>
+      <ResultRow/>
+     </div>
       
   </main>
   )
