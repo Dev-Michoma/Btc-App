@@ -7,7 +7,7 @@ export default function ResultRow({loading}:ResultRowProps){
 
     return(
         <div className=" relative border min-h-12 border-white/10 rounded-lg bg-gradient-to-r
-        from-purple-500/10 to-blue-500/10 p-4 my-3">
+        from-purple-500/10 to-blue-500/10 p-4 my-3 overflow-hidden">
              
 
 
@@ -21,7 +21,7 @@ export default function ResultRow({loading}:ResultRowProps){
              </div>
              {loading && (
                 <div className=" inset-0 absolute  bg-gradient-to-r from-transparent 
-                via-blue-900 skeleton-animation"/>
+                via-blue-700/50 to-transparent skeleton-animation"/>
              )
              }
              </div>
