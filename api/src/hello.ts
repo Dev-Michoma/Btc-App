@@ -1,8 +1,8 @@
+export default async function handleRequest(params: Record<string, any>, context: Record<string, any>) {
+    console.log('Received params:', params);
+    return {
+        message: 'Hi Aicode',
+    };
+}
 
- export default async function (params: any , context:any){
- console.log('Received params ' ,params);
- return {
-    message: 'Hi Aicode',
- }
-};
-console.log('Hello world ')
+handleRequest({ test: 'value' }, {}).then(response => console.log('Response:', response));

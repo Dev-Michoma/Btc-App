@@ -1,15 +1,11 @@
 import { getOfferFromPaybis } from "./provider";
-const express = require('express');  
-const app = express();              
 
-const PORT = process.env.PORT || 3005;  
-export default async function (params: any , context: any){
+export default async function handleRequest(params: Record<string, any>, context: Record<string, any>) {
+    console.log('Received params:', params);
     const btc = await getOfferFromPaybis(100);
     return {
-        mesage: btc,
-      };
-} 
+        message:btc,
+    };
+}
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+handleRequest({ test: 'value' }, {}).then(response => console.log('Response:', response));
