@@ -7,7 +7,7 @@ export default async function handleRequest(params: Record<string, any>, context
     const moonpay = await getOfferFromMoonPay(100);
     const transak = await getOfferFromTransac(100);
     return {
-        paybis ,guardarian ,moonpay ,transak ,
+        paybis ,guardarian ,moonpay ,transak
     };
 }
 

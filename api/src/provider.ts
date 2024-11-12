@@ -55,9 +55,9 @@ export async function getOfferFromMoonPay(amount:number):Promise<string | void>{
     export async function getOfferFromTransac(amount:number):Promise<string | void>{
         try{
           const res = await axios.get(`https://api.transak.com/api/v1/pricing/public/widget/quotes?fiatCurrency=USD&cryptoCurrency=
-            ETH&paymentMethod=credit_debit_card&isBuyOrSell=BUY&fiatAmount=${100}&partnerApiKey=02624956-010b-4775-8e31-7b9c8b82df76&network=ethereum&quoteCountryCode=KE`)
+            ETH&paymentMethod=credit_debit_card&isBuyOrSell=BUY&fiatAmount=${amount}&partnerApiKey=02624956-010b-4775-8e31-7b9c8b82df76&network=ethereum&quoteCountryCode=KE`)
         
-            return ( res)?.data?.cryptoAmount;
+            return ( res)?.data?.cryptoAmount?.toString();
         } catch (e){
              console.error(e);
              return;
